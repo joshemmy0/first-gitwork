@@ -30,7 +30,7 @@
 }
 /* after this is supposed to be the media-icons*/
 .navbar {
-    width: 70%;
+    width: 85%;
     flex-basis: 60%;
     display: flex;
 }
@@ -63,6 +63,7 @@
     display: flex;
     justify-content: space-evenly ;
     font-size: 0.5em;
+    cursor: pointer;
 }
 .nav-links li {
     padding-right: 3%;
@@ -152,6 +153,10 @@ img{
 .service {
     height: 25vh;
     width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .one {
     background-color: teal;
@@ -168,5 +173,29 @@ img{
 @media screen and (max-width:520px) {
     #portfolio {
         margin-top: 80vh;
+    } 
+}
+@media screen and (max-width:312px) {
+    .navigation {
+        width: 50%;
+        flex-basis: 10%;
     }
+    .nav-links ul {
+        flex-direction: column;
+        display: none;
+    }
+    .navigation:hover {
+        flex-basis: 60%;
+        transition: 2s;
+    }
+    .navigation:hover ul {
+        display: flex;
+    }
+    .nav-links li {
+        padding-top: 10%;
+    }
+    .navbar .main-navs {
+        flex-direction: column;
+    }
+    
 }
