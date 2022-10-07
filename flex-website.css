@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* i specified the font-variant here because i want it to affect everything*/
+    text-transform: uppercase;
+}
+.header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(web_design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.879);
+    background-color: rgba(145, 74, 15, 0.575);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    flex-basis: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* after this is supposed to be the media-icons*/
+.navbar {
+    width: 70%;
+    flex-basis: 60%;
+    display: flex;
+}
+.logo {
+    flex-basis:10% ;
+    background-color: rgb(206, 40, 40);
+}
+.navbar .main-navs {
+    padding-right: 4%;
+    width: 100%;
+    height: auto;
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.company-name {
+    padding-left: 4%;
+    flex-basis: 30%;
+    font-size: 1.15em;
+    color: rgb(206, 40, 40);
+}
+.nav-links {
+    flex-basis: 70%;
+}
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly ;
+    font-size: 0.5em;
+}
+.nav-links li {
+    padding-right: 3%;
+}
+.nav-links li:hover {
+    color: rgb(206, 40, 40);
+    text-decoration: underline;
+    text-decoration-color: rgb(206, 40, 40);
+}
+.text-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.text-intro h1 {
+    font-size: 1.67em;
+}
+.text-intro .empty {
+    background: white;
+    height: 0.10em;
+    width: 80%;
+    border-radius: 0.6em;
+    margin-bottom: 4%;
+}
+.text-intro h3 {
+    font-size: 1.04em;
+}
+.text-intro a {
+    font-size: 1.0em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(206, 40, 40);
+    padding: 0.76em;
+    border-radius: 0.53em;
+    margin-top: 3%;
+}
+.main-content {
+    padding-top: 10%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+#services {
+    margin-bottom: 10%;
+    height: 30vh;
+    flex-basis: 50%;
+}
+#portfolio {
+    margin-top: 30vh;
+    flex-basis: 50%;
+}
+img{
+    width: 100%;
+    height: 25vh;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading h2 {
+    font-size: 1.67;
+    text-decoration: underline;
+}
+.heading h3 {
+    padding-top: 2%;
+    font-size: 0.75em;
+}
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height:30vh;
+    width: 95%;
+}
+.boxes div {
+    width: 15em;
+    margin-top: 5%;
+}
+.service {
+    height: 25vh;
+    width: 5em;
+}
+.one {
+    background-color: teal;
+}
+.two{
+    background-color: rgb(0, 128, 66);
+}
+.three {
+    background-color: rgb(49, 49, 183);
+}
+.four {
+    background-color: rgb(128, 124, 0);
+}
+@media screen and (max-width:520px) {
+    #portfolio {
+        margin-top: 80vh;
+    }
+}
